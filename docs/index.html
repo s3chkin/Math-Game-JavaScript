@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Game</title>
+
+</head>
+
+<body>
+    <h1 align="center" style="float: center;"> Math Game</h1>
+    <center>
+        <div class="timer" id="countdown">1:00</div>
+    </center>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <center>
+        <p id="demo4" onclick="Check()"><input onclick="Check()" type="number" value="0" class="counter" style="border:none; 
+        background-color:rgb(235 239 233); font-size: 45px; display: grid; place-items: center;
+        width: 60px; text-align: center;" /></p>
+    </center>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- <input value="0" class="counter" /> -->
+    <button type="button" class="increment-btn" style="display: none;">Increment</button>
+
+    <center>
+        <div align="center" class="container" style="padding-top: 25px;">
+            <p id="num1" style="margin: 25px; display: grid;
+            place-items: center;">0</p>
+            <p style="text-align: center; font-size: 75px; ">+</p>
+            <p id="num2" style="margin: 25px; display: grid;
+            place-items: center;">0</p>
+            <p style="text-align: center; font-size: 75px;">=</p>
+            <p id="num3" style="margin: 25px;"> <input type="number" id="txtArea"> </p>
+        </div>
+
+        <!-- <textarea name="" id="txtArea" cols="80" rows="10"></textarea> -->
+    </center>
+    <div align="center">
+        <button type="button" onclick="Check()" id="btn"> Check</button>
+    </div>
+
+    <!-- <p id="demo5" style="font-size: 55px;">0</p> -->
+
+</body>
+
+</html>
+
+<script src="math.js"></script>
